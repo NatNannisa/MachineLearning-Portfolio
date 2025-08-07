@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="Hour <= 5.5\nsamples = 100.0%\nvalue = [0.805, 0.131, 0.057, 0.007]", fillcolor="#eb9d65"] ;
+1 [label="Age Group Cluster_Middle-Aged <= 0.5\nsamples = 16.8%\nvalue = [0.844, 0.106, 0.044, 0.006]", fillcolor="#ea975c"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Speed Cluster_Moderate Speed <= 0.5\nsamples = 13.5%\nvalue = [0.857, 0.1, 0.039, 0.004]", fillcolor="#e99558"] ;
+1 -> 2 ;
+3 [label="(...)", fillcolor="#C0C0C0"] ;
+2 -> 3 ;
+94 [label="(...)", fillcolor="#C0C0C0"] ;
+2 -> 94 ;
+139 [label="Speed Cluster_Very High Speed <= 0.5\nsamples = 3.3%\nvalue = [0.787, 0.133, 0.067, 0.013]", fillcolor="#eba06a"] ;
+1 -> 139 ;
+140 [label="(...)", fillcolor="#C0C0C0"] ;
+139 -> 140 ;
+163 [label="(...)", fillcolor="#C0C0C0"] ;
+139 -> 163 ;
+174 [label="Speed Cluster_Very High Speed <= 0.5\nsamples = 83.2%\nvalue = [0.797, 0.136, 0.06, 0.007]", fillcolor="#eb9f68"] ;
+0 -> 174 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+175 [label="Hour <= 14.5\nsamples = 47.4%\nvalue = [0.8, 0.117, 0.074, 0.01]", fillcolor="#eb9e66"] ;
+174 -> 175 ;
+176 [label="(...)", fillcolor="#C0C0C0"] ;
+175 -> 176 ;
+367 [label="(...)", fillcolor="#C0C0C0"] ;
+175 -> 367 ;
+568 [label="Age Group Cluster_Child <= 0.5\nsamples = 35.7%\nvalue = [0.794, 0.163, 0.041, 0.002]", fillcolor="#eba06a"] ;
+174 -> 568 ;
+569 [label="(...)", fillcolor="#C0C0C0"] ;
+568 -> 569 ;
+720 [label="(...)", fillcolor="#C0C0C0"] ;
+568 -> 720 ;
+}
